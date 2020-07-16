@@ -12,7 +12,9 @@ app = Flask(__name__)
 def index():
     age = int((datetime.date.today() - datetime.date(1995, 4, 22)).days / 365)
     return render_template('home.html', age=age)
-
+@app.route('/project')
+def project():
+	return render_template('project.html')
 
 @app.errorhandler(404)
 def page_not_found(e):
