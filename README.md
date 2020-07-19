@@ -1,1 +1,1 @@
-# Portfolio_website made by Justin Ding 
+# first batch of my website 
